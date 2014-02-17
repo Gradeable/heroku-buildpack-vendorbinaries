@@ -21,5 +21,6 @@ while read url; do
     curl -L --silent $url | tar xz
     pwd
     ls -l vendor
+    cp -r vendor/gs /app/vendor
   fi
 done < .vendor_urls
