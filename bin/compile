@@ -19,5 +19,7 @@ while read url; do
   if [ -n "$url" ]; then # incase ensure_newline_at_eof_on_save is enabled
     echo Vendoring $url | indent
     curl -L --silent $url | tar xz
+    pwd
+    ls -l vendor
   fi
 done < .vendor_urls
