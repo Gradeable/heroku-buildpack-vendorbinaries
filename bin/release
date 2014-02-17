@@ -1,2 +1,3 @@
 #!/bin/sh
 echo "--- {}"
+chmod -R u+x /app/vendor
