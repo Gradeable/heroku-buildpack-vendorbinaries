@@ -22,5 +22,7 @@ while read url; do
     pwd
     ls -l vendor
     cp -r vendor/gs /app/vendor
+    mkdir /app/.magick
+    cp /app/vendor/im-6.8.6-6/etc/ImageMagick-6/* /app/.magick/
   fi
 done < .vendor_urls
